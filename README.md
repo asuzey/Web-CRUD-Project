@@ -1,16 +1,58 @@
-# React + Vite
+# Web CRUD Projesi (React + LocalStorage)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React ve Vite ile geliştirilmiş, verileri tarayıcının **LocalStorage**'ında saklayan basit bir görev yönetimi (CRUD) uygulamasıdır.
 
-Currently, two official plugins are available:
+--> **Canlı Demo:** [fantastic-truffle-07863d.netlify.app](https://fantastic-truffle-07863d.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Özellikler
 
-## React Compiler
+-  **Ekleme (Create):** Yeni görev ekleyebilirsiniz.
+-  **Listeleme (Read):** Eklenen tüm görevler liste halinde görüntülenir.
+-  **Düzenleme (Update):** Mevcut görevleri güncelleyebilirsiniz.
+-  **Silme (Delete):** İstemediğiniz görevleri silebilirsiniz.
+-  **Kalıcı veri:** Görevler LocalStorage'da tutulur; sayfa yenilense bile kaybolmaz.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Kullanılan Teknolojiler
 
-## Expanding the Oxlint configuration
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- JavaScript (ES6+)
+- LocalStorage API
+- [Netlify](https://www.netlify.com/) (yayınlama)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+##  Kurulum ve Çalıştırma
+
+Projeyi bilgisayarınızda çalıştırmak için:
+
+```bash
+# Depoyu klonlayın
+git clone https://github.com/asuzey/Web-CRUD-Project.git
+
+# Proje klasörüne girin
+cd Web-CRUD-Project
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
+npm run dev
+```
+
+Ardından tarayıcınızda terminalde gösterilen adresi (genellikle `http://localhost:5173`) açın.
+
+### Üretim için derleme
+
+```bash
+npm run build
+npm run preview
+```
+
+##  Kullanım
+
+1. Üstteki kutuya görev adını yazın ve **Ekle** butonuna tıklayın.
+2. Bir görevi değiştirmek için yanındaki **Düzenle** butonunu kullanın.
+3. Bir görevi kaldırmak için **Sil** butonuna tıklayın.
+
+##  Geliştirici
+
+**Asuman Zeynep Bayram** — [github.com/asuzey](https://github.com/asuzey)
